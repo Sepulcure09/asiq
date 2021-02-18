@@ -16,3 +16,14 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+//Js2 Prak1
+Route::get('/', function () {
+    echo "Selamat Datang";
+});
+Route::get('/about', function() {
+    echo nl2br("Nama : Irfan Thalib Alfarid \n \n NIM : 1941720039 \n \n Kelas : TI-2A");
+});
+Route::get('/article/{id}', function($id) {
+    echo ("Halaman artikel ini ber-id ".$id);
+});
+
