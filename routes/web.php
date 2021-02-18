@@ -26,4 +26,9 @@ Route::get('/about', function() {
 Route::get('/article/{id}', function($id) {
     echo ("Halaman artikel ini ber-id ".$id);
 });
+//Js2 Prak2 No.1,2
+Route::get('/', [App\Http\Controllers\PageController::class, 'index']);
+Route::get('/about', [App\Http\Controllers\PageController::class, 'about']);
+Route::get('/article/{id}', [App\Http\Controllers\PageController::class, 'article']);
+
 
