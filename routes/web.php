@@ -1,5 +1,4 @@
 <?php
-
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,6 +16,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 //Js2 Prak1
+//no 1,2,3
 Route::get('/', function () {
     echo "Selamat Datang";
 });
@@ -26,3 +26,12 @@ Route::get('/about', function() {
 Route::get('/article/{id}', function($id) {
     echo ("Halaman artikel ini ber-id ".$id);
 });
+//Js2 Prak2
+//no 1,2
+Route::get('/', [App\Http\Controllers\PageController::class, 'index']);
+Route::get('/about', [App\Http\Controllers\PageController::class, 'about']);
+Route::get('/article/{id}', [App\Http\Controllers\PageController::class, 'article']);
+//no 3
+Route::get('/', [App\Http\Controllers\HomeController::class, 'index']);
+Route::get('/about', [App\Http\Controllers\AboutController::class, 'index']);
+Route::get('/article/{id}', [App\Http\Controllers\ArticleController::class, 'index']);
