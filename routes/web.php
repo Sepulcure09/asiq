@@ -30,5 +30,10 @@ Route::get('/article/{id}', function($id) {
 Route::get('/', [App\Http\Controllers\PageController::class, 'index']);
 Route::get('/about', [App\Http\Controllers\PageController::class, 'about']);
 Route::get('/article/{id}', [App\Http\Controllers\PageController::class, 'article']);
+//Js2 Prak No.3
+Route::get('/', [App\Http\Controllers\HomeController::class, 'index']);
+Route::get('/about', [App\Http\Controllers\AboutController::class, 'index']);
+Route::get('/article/{id}', [App\Http\Controllers\ArticleController::class, 'index']);
+
 
 
