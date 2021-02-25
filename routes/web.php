@@ -41,4 +41,4 @@ Route::get('/news/{tanggal}', [App\Http\Controllers\NewsController::class, 'inde
 Route::get('/programs/{prog}', [App\Http\Controllers\ProgramController::class, 'index']);
 Route::get('/aboutUs', [App\Http\Controllers\AboutUsController::class, 'index']);
 Route::get('/contactUs', [App\Http\Controllers\ContactUsController::class, 'index']);
-
+//Tes
